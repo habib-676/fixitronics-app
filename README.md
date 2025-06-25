@@ -2,7 +2,7 @@
 
 ---
 
-## 🔗  Assignment-11-assignment_category_02 Live Site URL
+## 🔗  Live Site URL
 
 **Live Client Site:** [https://fixitronics-app.web.app](https://fixitronics-app.web.app)
 
@@ -92,9 +92,22 @@
 
 ---
 
+## 💻 Run Locally
+
+To run this project on your local machine, follow the steps below:
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/habib-676/fixitronics-app.git
+cd Fixitronics-app
+cd client
+npm run dev
+```
+
 ## 🤝 Author
 
-Developed by `Habibur Rahman` as part of  Assignment-11-assignment_category_02 
+Developed by `Habibur Rahman` 
 📧 Contact: rahman.habibur2421k@gmail.com
 
 ---
