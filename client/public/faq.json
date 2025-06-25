@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "What services does Fixitronics offer?",
+    "answer": "Fixitronics provides electronic item repair services, including mobile phones, laptops, TVs, and home appliances."
+  },
+  {
+    "id": 2,
+    "question": "How long does a typical repair take?",
+    "answer": "Most repairs are completed within 24 to 48 hours depending on the issue and parts availability."
+  },
+  {
+    "id": 3,
+    "question": "Do you offer a warranty on repairs?",
+    "answer": "Yes, we provide a 30-day service warranty on all repairs unless otherwise specified."
+  },
+  {
+    "id": 4,
+    "question": "Can I track the status of my repair?",
+    "answer": "Yes, after booking a service, you will receive a tracking ID that can be used to check your repair status on our website."
+  },
+  {
+    "id": 5,
+    "question": "Do you provide home pickup and delivery?",
+    "answer": "Yes, we offer convenient home pickup and delivery for eligible repair requests within our service areas."
+  },
+  {
+    "id": 6,
+    "question": "How can I book a service?",
+    "answer": "You can book a service directly from our website by filling out the booking form and selecting your device type and issue."
+  },
+  {
+    "id": 7,
+    "question": "Is there a consultation or inspection fee?",
+    "answer": "We offer free initial inspection for most devices. If there's any charge, you’ll be informed before we proceed."
+  }
+]
