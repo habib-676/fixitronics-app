@@ -7,7 +7,7 @@ import technician from "../assets/mechanic.png";
 
 const Stats = () => {
   return (
-    <div className="my-28 text-primary-content">
+    <div id="stats" className="my-28 text-primary-content">
       <h2 className="text-3xl font-bold text-center">
         Why Thousands Trust Fixitronics ?
       </h2>
@@ -23,7 +23,7 @@ const Stats = () => {
             src={iconService}
             className="w-[70px] h-[70px] rounded-2xl object-cover"
           />
-          <h2 className="font-extrabold text-white text-3xl md:text-5xl">
+          <h2 className="font-extrabold text-white text-2xl md:text-5xl">
             <CountUp end={5200} duration={20}></CountUp>+
           </h2>
 
@@ -36,7 +36,7 @@ const Stats = () => {
             src={clientIcon}
             className="w-[70px] h-[70px] rounded-2xl object-cover"
           />
-          <h2 className="font-extrabold text-white text-3xl md:text-5xl">
+          <h2 className="font-extrabold text-white text-2xl md:text-5xl">
             <CountUp end={4800} duration={20}></CountUp>+
           </h2>
           <p className="font-semibold text-lg text-gray-400">Happy Customers</p>
@@ -46,7 +46,7 @@ const Stats = () => {
             src={technician}
             className="w-[70px] h-[70px] rounded-2xl object-cover"
           />
-          <h2 className="font-extrabold text-white text-3xl md:text-5xl">
+          <h2 className="font-extrabold text-white text-2xl md:text-5xl">
             <CountUp end={120} duration={20}></CountUp>+
           </h2>
           <p className="font-semibold text-lg text-gray-400">
@@ -58,7 +58,7 @@ const Stats = () => {
             src={trustImg}
             className="w-[70px] h-[70px] rounded-2xl object-cover"
           />
-          <h2 className="font-extrabold text-white text-3xl md:text-5xl">
+          <h2 className="font-extrabold text-white text-2xl md:text-5xl">
             <CountUp end={75} duration={20}></CountUp>+
           </h2>
           <p className="font-semibold text-lg text-gray-400">Partner Brands</p>

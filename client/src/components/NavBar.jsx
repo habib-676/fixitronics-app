@@ -1,8 +1,9 @@
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import logoImg from "../assets/logo_img.png";
 import { use, useEffect, useState } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 import Swal from "sweetalert2";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
   const { user, logOutUser } = use(AuthContext);
@@ -21,6 +22,17 @@ const NavBar = () => {
     document.documentElement.setAttribute("data-theme", newTheme);
     setThemeMode(newTheme === "myThemeDark" ? "dark" : "light");
   };
+
+  const navigate = useNavigate();
+
+  const handleStatsClick = () => {
+    navigate("/", { state: { scrollTo: "stats" } });
+  };
+
+  const handleFaqClick = () => {
+    navigate("/", { state: { scrollTo: "faq" } });
+  };
+
   const links = (
     <>
       <li>
@@ -33,24 +45,32 @@ const NavBar = () => {
           Services
         </NavLink>
       </li>
+      {user && (
+        <li>
+          <details>
+            <summary className={"hover:bg-primary"}>Dashboard</summary>
+            <ul className="w-44 z-20 *:hover:bg-primary">
+              <li>
+                <NavLink to={"/add-service"}>Add Service</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/manage-services"}>Manage Service</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/booked-service"}>Booked-Services</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/service-to-do"}>Service-To-Do</NavLink>
+              </li>
+            </ul>
+          </details>
+        </li>
+      )}
       <li>
-        <details>
-          <summary className={"hover:bg-primary"}>Dashboard</summary>
-          <ul className="w-44 z-20 *:hover:bg-primary">
-            <li>
-              <NavLink to={"/add-service"}>Add Service</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/manage-services"}>Manage Service</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/booked-service"}>Booked-Services</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/service-to-do"}>Service-To-Do</NavLink>
-            </li>
-          </ul>
-        </details>
+        <ScrollLink className={"hover:bg-primary"} onClick={handleStatsClick}>Stats</ScrollLink>
+      </li>
+      <li>
+        <ScrollLink className={"hover:bg-primary"} onClick={handleFaqClick}>FAQ</ScrollLink>
       </li>
       <li>
         <label className="flex cursor-pointer gap-2">
@@ -130,7 +150,7 @@ const NavBar = () => {
       });
   };
   return (
-    <div className="navbar bg-base-300 shadow-sm text-primary-content">
+    <div className="navbar bg-base-300 shadow-sm text-primary-content px-5 md:px-10 lg:px-16">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

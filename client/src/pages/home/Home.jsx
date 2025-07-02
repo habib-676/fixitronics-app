@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "../../components/slider/Slider";
 import Popular from "./Popular";
 import { Helmet } from "react-helmet";
 import { motion } from "motion/react";
 import Stats from "../../components/Stats";
 import Faq from "./Faq";
+import { useLocation } from "react-router";
+import { scroller } from "react-scroll";
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo === "stats") {
+      // Delay to make sure Element is mounted
+      setTimeout(() => {
+        scroller.scrollTo("stats", {
+          smooth: true,
+          duration: 500,
+          offset: -80,
+        });
+      }, 100);
+    }
+    if (location.state?.scrollTo === "faq") {
+      // Delay to make sure Element is mounted
+      setTimeout(() => {
+        scroller.scrollTo("faq", {
+          smooth: true,
+          duration: 500,
+          offset: -80,
+        });
+      }, 100);
+    }
+    window.history.replaceState({}, document.title);
+  }, [location]);
   return (
     <div>
       <Helmet>

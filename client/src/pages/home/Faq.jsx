@@ -4,7 +4,7 @@ const faqPromise = fetch("/faq.json").then((res) => res.json());
 const Faq = () => {
   const faqData = use(faqPromise);
   return (
-    <div className="my-10 text-primary-content">
+    <div className="my-10 text-primary-content" id="faq">
       <h2 className="text-3xl font-bold text-center">
         Frequently Asked Questions
       </h2>

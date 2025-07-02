@@ -5,7 +5,7 @@ import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 md:p-16">
       <aside>
         <img src={myLogo} className="md:w-20 w-14" alt="fixitronics-logo" />
         <p>
@@ -17,23 +17,16 @@ const Footer = () => {
       <nav>
         <h6 className="footer-title">Social</h6>
         <div className="grid grid-flow-col gap-4">
-          <Link to={"#"}>
+          <Link to={"https://www.facebook.com/habib676"}>
             <FaFacebookF size={20} />
           </Link>
-          <Link to={"#"}>
+          <Link to={"https://www.linkedin.com/in/wdhabib/"}>
             <FaLinkedinIn size={20} />
           </Link>
-          <Link to={"#"}>
+          <Link to={"https://www.youtube.com/@habibslab"}>
             <FaYoutube size={20} />
           </Link>
         </div>
-      </nav>
-
-      <nav>
-        <h6 className="footer-title">Legal</h6>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
       </nav>
     </footer>
   );
