@@ -7,7 +7,9 @@ import Stats from "../../components/Stats";
 import Faq from "./Faq";
 import { useLocation } from "react-router";
 import { scroller } from "react-scroll";
+import OurTeam from "./OurTeam";
 
+const teamPromise = fetch("/team.json").then((res) => res.json());
 const Home = () => {
   const location = useLocation();
 
@@ -71,6 +73,14 @@ const Home = () => {
       >
         <Stats></Stats>
       </motion.section>
+      <motion.section
+        initial={{ x: -200 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <OurTeam teamPromise={teamPromise}></OurTeam>
+      </motion.section>
+
       <motion.section
         initial={{ x: -200 }}
         whileInView={{ x: 0 }}
