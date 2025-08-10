@@ -50,7 +50,7 @@ const AllServices = () => {
 
       <div>
         {filteredServices.length ? (
-          <div className="grid grid-cols-1 gap-7 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-8">
             {filteredServices.map((service) => (
               <SingleService
                 service={service}
