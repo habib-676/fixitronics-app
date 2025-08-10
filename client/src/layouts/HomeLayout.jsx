@@ -9,7 +9,7 @@ const HomeLayout = () => {
       <div className="sticky top-0 z-50 ">
         <NavBar></NavBar>
       </div>
-      <div className="max-w-11/12 mx-auto">
+      <div className="max-w-11/12 mx-auto min-h-[80vh]">
         <Outlet></Outlet>
       </div>
       <Footer></Footer>
