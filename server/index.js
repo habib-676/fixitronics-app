@@ -43,12 +43,13 @@ const verifyJWT = (req, res, next) => {
       return res.status(401).send({ message: "Unauthorized Access !" });
     }
     req.tokenEmail = decoded.email;
+    next();
   });
-  next();
 };
 
 async function run() {
   try {
+    await client.connect();
     const database = client.db("fixitronicsDB");
     const serviceCollection = database.collection("services");
     const ordersCollection = database.collection("orders");
@@ -65,8 +66,8 @@ async function run() {
       res
         .cookie("token", token, {
           httpOnly: true,
-          secure: true,
-          sameSite: "none",
+          secure: process.env.NODE_ENV === "production",
+          sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
         })
         .send({ message: "JWT created successfully" });
     });
