@@ -81,7 +81,7 @@ const ToDoServiceLists = ({ myBookedServicesPromise }) => {
                 <input
                   type="submit"
                   value="Update"
-                  className="btn btn-accent mt-5"
+                  className="btn btn-primary mt-5"
                 />
               </form>
             </div>

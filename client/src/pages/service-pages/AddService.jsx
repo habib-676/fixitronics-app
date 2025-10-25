@@ -107,7 +107,7 @@ const AddService = () => {
           <input
             type="submit"
             value="Submit"
-            className="btn btn-secondary text-primary-content mt-6"
+            className="btn btn-primary mt-6"
           />
         </form>
       </div>

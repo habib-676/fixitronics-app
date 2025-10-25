@@ -71,49 +71,53 @@ const Login = () => {
       <h3 className="font-bold text-3xl text-center mt-10">Sign in Now</h3>
       <div className="flex items-center flex-col-reverse justify-center">
         <div className="card bg-base-200 w-full max-w-sm mx-auto shrink-0 shadow-2xl">
-        <div className="card-body bg-base-200 border">
-          <form className="fieldset" onSubmit={handleSignIn}>
-            <label className="label">Email</label>
-            <input
-              type="email"
-              className="input border-accent-content"
-              placeholder="Email"
-              name="email"
-              required
-            />
-            <label className="label">Password</label>
-            <input
-              type="password"
-              className="input border-accent-content"
-              placeholder="Password"
-              name="password"
-              required
-            />
-            <div>
-              <p>
-                Don't have any account?{" "}
-                <Link
-                  className="link link-hover text-blue-400"
-                  to={"/auth/sign-up"}
-                >
-                  Sign Up
-                </Link>
-              </p>
-            </div>
-            <input className="btn btn-primary" type="submit" value="Sign In" />
-          </form>
-          <button
-            onClick={handleGoogle}
-            className="btn btn-primary flex items-center gap-2"
-          >
-            <BsGoogle></BsGoogle>
-            <span>Sign in using Google</span>
-          </button>
+          <div className="card-body bg-base-200 border">
+            <form className="fieldset" onSubmit={handleSignIn}>
+              <label className="label">Email</label>
+              <input
+                type="email"
+                className="input border-accent-content"
+                placeholder="Email"
+                name="email"
+                required
+              />
+              <label className="label">Password</label>
+              <input
+                type="password"
+                className="input border-accent-content"
+                placeholder="Password"
+                name="password"
+                required
+              />
+              <div>
+                <p>
+                  Don't have any account?{" "}
+                  <Link
+                    className="link link-hover text-accent"
+                    to={"/auth/sign-up"}
+                  >
+                    Sign Up
+                  </Link>
+                </p>
+              </div>
+              <input
+                className="btn btn-primary"
+                type="submit"
+                value="Sign In"
+              />
+            </form>
+            <button
+              onClick={handleGoogle}
+              className="btn btn-primary flex items-center gap-2"
+            >
+              <BsGoogle></BsGoogle>
+              <span>Sign in using Google</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="w-sm">
-        <Lottie animationData={signInAnimation} loop={true} ></Lottie>
-      </div>
+        <div className="w-sm">
+          <Lottie animationData={signInAnimation} loop={true}></Lottie>
+        </div>
       </div>
     </div>
   );

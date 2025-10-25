@@ -49,7 +49,7 @@ const NavBar = () => {
         <li>
           <details>
             <summary className={"hover:bg-primary"}>Dashboard</summary>
-            <ul className="w-44 z-20 *:hover:bg-primary">
+            <ul className="w-44 z-20 *:hover:bg-primary text-primary-content">
               <li>
                 <NavLink to={"/add-service"}>Add Service</NavLink>
               </li>
@@ -150,7 +150,7 @@ const NavBar = () => {
       });
   };
   return (
-    <div className="navbar bg-base-300 shadow-sm text-primary-content px-5 md:px-10 lg:px-16">
+    <div className="navbar bg-secondary z-50 backdrop:blur-2xl shadow-sm text-white px-5 md:px-10 lg:px-16">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
