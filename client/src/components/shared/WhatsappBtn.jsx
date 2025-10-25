@@ -5,7 +5,7 @@ const WhatsappBtn = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
-    <div className="fixed bottom-[25%] right-6 z-50 group">
+    <div className="fixed bottom-[10%] right-6 z-50 group">
       <div className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-40 pointer-events-none"></div>
 
       <a

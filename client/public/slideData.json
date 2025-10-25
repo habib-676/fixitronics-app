@@ -1,25 +1,25 @@
 [
   {
     "backgroundImage": "https://i.ibb.co/HTMM6DLs/banner-1.jpg",
-    "title": "🔧 Fast Gadget Repair",
+    "title": "Fast Gadget Repair",
     "description": "Get your smartphones, laptops, and tablets fixed quickly and reliably by certified technicians.",
     "buttonText": "Book Now"
   },
   {
     "backgroundImage": "https://i.ibb.co/8Lp34pJx/banner-2.jpg",
-    "title": "💡 Free Diagnosis",
+    "title": "Free Diagnosis",
     "description": "Not sure what's wrong with your device? We offer free diagnosis to pinpoint the issue fast.",
     "buttonText": "Get Diagnosis"
   },
   {
     "backgroundImage": "https://i.ibb.co/0ymrS1hW/banner-3.jpg",
-    "title": "🛠️ Quality Component Replacement",
+    "title": "Quality Component Replacement",
     "description": "We use premium parts for replacements to ensure long-lasting performance and reliability.",
     "buttonText": "View Services"
   },
   {
     "backgroundImage": "https://i.ibb.co/zhf9wfNF/banner-4.jpg",
-    "title": "📦 Doorstep Pickup & Delivery",
+    "title": "Doorstep Pickup & Delivery",
     "description": "Busy schedule? We'll pick up your device and deliver it back after repair — hassle-free!",
     "buttonText": "Schedule Pickup"
   }
