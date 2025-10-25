@@ -8,6 +8,7 @@ import Faq from "./Faq";
 import { useLocation } from "react-router";
 import { scroller } from "react-scroll";
 import OurTeam from "./OurTeam";
+import WhatsappBtn from "../../components/shared/WhatsappBtn";
 
 const teamPromise = fetch("/team.json").then((res) => res.json());
 const Home = () => {
@@ -37,7 +38,7 @@ const Home = () => {
     window.history.replaceState({}, document.title);
   }, [location]);
   return (
-    <div>
+    <div className="relative">
       <Helmet>
         <title>Fixitronics || Home</title>
       </Helmet>
@@ -88,6 +89,9 @@ const Home = () => {
       >
         <Faq></Faq>
       </motion.section>
+      <section>
+        <WhatsappBtn />
+      </section>
     </div>
   );
 };
